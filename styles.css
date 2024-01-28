@@ -1,178 +1,200 @@
-  @font-face {
-    font-family: 'amatic_scregular';
-    src: url('./fonts/amaticsc-regular-webfont.woff2') format('woff2'),
-         url('./fonts/amaticsc-regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
+/* Font Face */
+@font-face {
+  font-family: 'amatic_scregular';
+  src: url('./fonts/amaticsc-regular-webfont.woff2') format('woff2'),
+       url('./fonts/amaticsc-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
+
+/* Global Styles */
 * {
-    font-family: 'comfortaaregular';
-    src: url('comfortaa-variablefont_wght-webfont.woff2') format('woff2'),
-         url('comfortaa-variablefont_wght-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
+  font-family: 'comfortaaregular';
+  src: url('comfortaa-variablefont_wght-webfont.woff2') format('woff2'),
+       url('comfortaa-variablefont_wght-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
-*{
-    font-family: 'rajdhaniregular';
-    src: url('rajdhani-regular-webfont.woff2') format('woff2'),
-         url('rajdhani-regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
 
+* {
+  font-family: 'rajdhaniregular';
+  src: url('rajdhani-regular-webfont.woff2') format('woff2'),
+       url('rajdhani-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
+
+/* Button Styles */
 .buttond {
-    display: inline-block;
-    padding: 15px 25px;
-    font-size: 24px;
-    cursor: pointer;
-    text-align: center;
-    text-decoration: none;
-    outline: none;
-    color: #fff;
-    background-color: #04AA6D;
-    border: none;
-    border-radius: 15px;
-    box-shadow: 0 9px #999;
-  }
-  
-  .buttond:hover {background-color: #3e8e41}
-  
-  .buttond:active {
-    background-color: #3e8e41;
-    box-shadow: 0 5px #666;
-    transform: translateY(4px);
-  }
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #04AA6D;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.buttond:hover {
+  background-color: #3e8e41;
+}
+
+.buttond:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+/* Grid Styles */
+.grid-container {
+  display: grid;
+  height: auto;
+  align-content: space-evenly;
+  grid-template-columns: auto auto auto;
+}
+
+.grid-item {
+  display: block;
+  text-align: center;
+  padding: 20px;
+  font-size: 30px;
+}
+
+/* Navigation Styles */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: grey;
+  cursor: pointer;
+}
+
+/* Card Styles */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 100%;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container {
+  padding: 2px 16px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Button 2 Styles */
+.button2 {
+  background-color: white;
+  color: black;
+  border: 2px solid #008CBA;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  padding: 15px 25px;
+  border-radius: 10px;
+  width: 100px;
+}
+
+.button2:hover {
+  background-color: #008CBA;
+  color: white;
+}
+
+/* Expanding P Tag Styles */
+#real {
+  font-size: 20px;
+}
+
+#real p {
+  max-height: 50px;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+#real:hover p {
+  max-height: 500px;
+}
+
+#real h4 {
+  overflow: hidden;
+  font-size: .75em;
+}
+
+/* Icons Styles */
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 6px;
+  border-radius: 50%;
+  transition: transform 0.3s;
+}
+
+.fa:hover {
+  transform: scale(1.2);
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-github {
+  background: black;
+  color: white;
+}
+
+/* Media Query for Responsive Styles */
+@media only screen and (max-width: 768px) {
   .grid-container {
-    display: grid;
-    height: auto;
-    align-content: space-evenly;
-    grid-template-columns: auto auto auto;
-  }
-  
-  .grid-item{
-    display:block;
-    text-align: center;
-    padding: 20px ;
-    font-size: 30px;
+      grid-template-columns: 100%;
   }
 
-  ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-  }
-  
-  li {
-    float: left;
-  }
-  
-  li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
-  li a:hover {
-    background-color: grey;
-    cursor: pointer;
+  .grid-item {
+      padding: 10px;
+      font-size: 20px;
   }
 
-  .card {
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
-    width: 100%;
+  body {
+      font-size: 14px;
   }
-  
-  .card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-  }
-  
-  .container {
-    padding: 2px 16px;
-  }
-
-  body{
-    margin: 0;
-    padding: 0;
-  }
-  
-  /* button */
-  .button2 {
-    background-color: white; 
-    color: black; 
-    border: 2px solid #008CBA;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    transition-duration: 0.4s;
-    cursor: pointer;
-    padding: 15px 25px;
-    border-radius: 10px;
-    width: 100px;
-  }
-
-  
-  .button2:hover {
-    background-color: #008CBA;
-    color: white;
-  }
-
-/* expanding p tag */
-  #real {
-    font-size: 20px;
-  }
-
-  #real p {
-    max-height: 50px;
-    overflow: hidden;
-    transition: max-height 0.3s ease;
-  }
-
-  #real:hover p {
-    max-height: 500px;
-  }
-
-  #real h4 {
-    overflow: : hidden;
-    font-size: .75em;
-  }
-
-
-  /* icons */
-
-  .fa {
-    padding: 20px;
-    font-size: 30px;
-    text-align: center;
-    text-decoration: none;
-    margin: 5px 6px;
-    border-radius: 50%;
-    transition: transform 0.3s;
-  }
-  
-  .fa:hover {  
-    transform: scale(1.2);
-  }
-  
-  .fa-linkedin {
-    background: #007bb5;
-    color: white;
-  }
-  
-  .fa-instagram {
-    background: #125688;
-    color: white;
-  }
-  
-  .fa-github {
-    background: black;
-    color: white;
-  }
+}
