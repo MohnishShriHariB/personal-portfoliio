@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="grid-container" style="background-color: black;grid-template-columns: 20% 60% 20%;">
+        <div class="grid-item"></div>
+        <div class="grid-item">
+            <h1 style="color: antiquewhite; text-align: center; font-size: 100px; margin-bottom: 0%;font-family:'amatic_scregular';">
+                MOHNISH SHRI HARI B
+            </h1>
+            <h2 style="color: antiquewhite; text-align: center;font-family: 'comfortaaregular';font-size: 35px;margin-top: 0%;">
+                Student | Developer | Learner
+            </h2>
+        </div>
+
+    </div>
+    <div class="grid-container" style="height:auto;margin-bottom: 0%;grid-template-columns: 100%;">
+        <div class="grid-item">
+            <h1 style="font-family: 'rajdhaniregular';font-size:50px;text-align: center;">
+                ABOUT ME
+            </h1>
+            <p style="text-align: center;width:700px;padding-left: 400px;">
+                Hello! I am <span style="color: blue;">B Mohnish Shri Hari</span>, currently a 2nd year student in <span style="color: blue;">Institute of Technology, Chennai</span>. From very early on in my life, I have been interested in technology and computers. Hence, I am currently pursuing this interest as a Computer Science student.
+                My technical interests know no bounds! I am good at <span style="color: blue;">Frontend Development, Competititve Programming</span>, experienced in <span style="color: blue;">Full Stack Web Development</span>.
+            </p>
+            <p style="align-items: center;">
+                <a class="buttond" href="./staticfiles/RESUME.pdf">Download CV</a>
+            </p>
+        </div>
+    </div>
+    
+    <div class="grid-container" style="grid-template-columns: 100%;margin-top: 0%;">
+        <div class="grid-item">
+            <h1 style="font-family: 'rajdhaniregular';font-size:50px;text-align: center;">
+                MY SKILLS
+            </h1>
+            <div class="grid-container" style="grid-template-columns: 10% 80% 10%;">
+                <div class="grid-item"></div>
+                <div class="grid-item">
+                    <ul style="font-family: 'comfortaaregular';">
+                        <li style="width: 33.33%;"><a onclick="showContent('frontend')">FrontEnd</a></li>
+                        <li style="width: 33.33%;"><a onclick="showContent('backend')">BackEnd</a></li>
+                        <li style="width: 33.33%;"><a onclick="showContent('dsa')">DSA</a></li>
+                    </ul>
+                    <div id="displaybox"></div>
+                </div>
+                <div class="grid-item"></div>
+            </div>
+        </div>
+    </div>
+    <div class="grid-container" style="grid-template-columns: 10% 80% 10%;margin-bottom: 0%;">
+        <div class="grid-item"></div>
+        <div class="grid-item">
+            <hr>
+        </div>
+        </div>
+        <div class="grid-item"></div>
+    </div>
+    <div class="grid-container" style="grid-template-columns: 100%;margin-top: 0%;">
+        <div class="grid-item">
+            <h1 style="font-family: 'rajdhaniregular';font-size:50px;text-align: center;">
+                MY PROJECTS
+            </h1>
+            <div class="grid-container" style="grid-template-columns: 15% 23.33% 23.33% 23.33% 15%;align-items: center;">
+                <div class="grid-item"></div>
+                <div class="grid-item">
+                    <div class="card" id="real">
+                        <img src="./staticimages/realestate.png" alt="Avatar" style="width:50%">
+                        <div class="container">
+                          <h4><b>REAL ESTATE TRACKER</b></h4> 
+                          <p>This project helps you to track the properties around your city and gives the property details. I have used Django framework for backend and html, css, javascript, ajax and json for the frontend. I have used realitymole api for getting the details of the properties and geolocation api to get the latitude and longitude of the city</p>
+                          <a href="https://github.com/MohnishShriHariB/Realestatetracker.git" class="button2">GO TO REPOSITORY</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <div class="card" id="real">
+                        <img src="./staticimages/algo.png" alt="Avatar" style="width:50%">
+                        <div class="container">
+                            <h4><b>ALGORITHM VISUALIZER</b></h4> 
+                            <p>This project helps you to visualize some data structure algorithms like sorting techniques, searching techniques, dijkstra algorithm, prims and kruskal algorithm, breadth first search and depth first search algorithms. It enables the user to give custom inputs for each algorithm.I have used Django framework for backend and html, css for the frontend. I have used matplotlib for generating the graphs and image library to convert them into gifs.  </p>
+                            <a href="https://github.com/MohnishShriHariB/algoviz.git" class="button2">GO TO REPOSITORY</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="grid-item">
+                    <div class="card" id="real">
+                        <img src="./staticimages/price.png" alt="Avatar" style="width:50%">
+                        <div class="container">
+                            <h4><b>PRICE COMPARISON</b></h4> 
+                            <p>This website hepls the user to compare the current selling price of the electronics from various e-commerce websites like Amazon and Flipkart. I have used Django for the backend and html,css for the front end. I have used beautifulsoup to scrape the product deatails from the website </p>
+                            <a href="https://github.com/MohnishShriHariB/PriceComp.git" class="button2">GO TO REPOSITORY</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="grid-item"></div>
+                <div class="grid-item"></div>
+                <div class="grid-item">
+                    <div class="card" id="real">
+                        <img src="./staticimages/hall.jpg" alt="Avatar" style="width:50%">
+                        <div class="container">
+                            <h4><b>HALL OF FAME</b></h4> 
+                            <p>This website enables user to share their favorite youtube videos. They can also categorise their videos. It enables the user to edit , delete or add videos. I have used django for the backend and html, css, javascript, ajax, json for the frontend. I have used Youtube api to get the details about the youtube video and to check whether the user has given a valid YouTube link.</p>
+                            <a href="https://github.com/MohnishShriHariB/hallofvideo.git" class="button2">GO TO REPOSITORY</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="grid-item">
+                    <div class="card" id="real">
+                        <img src="./staticimages/github.svg" alt="Avatar" style="width:50%">
+                        <div class="container">
+                            <h4><b>GITHUB</b></h4> 
+                            <p>View my other projects on my GitHub account</p>
+                            <a href="https://github.com/MohnishShriHariB" class="button2">GO TO GITHUB</a>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="grid-container" style="grid-template-columns: 10% 80% 10%;margin-bottom: 0%;">
+        <div class="grid-item"></div>
+        <div class="grid-item">
+            <hr>
+        </div>
+        </div>
+        <div class="grid-item"></div>
+    </div>
+    <div class="grid-container" style="grid-template-columns: 100%;margin-top: 0%;">
+        <div class="grid-item">
+            <h1 style="font-family: 'rajdhaniregular';font-size:50px;text-align: center;">
+                CONTACT INFO
+            </h1>
+            <h1 style="font-family: 'rajdhaniregular';font-size:30px;text-align: center;">
+                PHONE NO - 9840303025
+            </h1>
+            <h1 style="font-family: 'rajdhaniregular';font-size:30px;text-align: center;" >
+                MAIL ID - <a href="mailto:mohnishshrihari2004@gmail.com" style="color: blue; text-decoration: none; transition: color 0.3s;"    onmouseover="this.style.color='red'" onmouseout="this.style.color='blue'">mohnishshrihari2004@gmail.com</a>
+            </h1>
+            <a href="https://www.linkedin.com/in/mohnish-shri-hari-b-29a210261" class="fa fa-linkedin"></a>
+            <a href="https://www.instagram.com/mohnishshrihari2004?igsh=MWxrbTFvN2I0d3Fkcg==" class="fa fa-instagram"></a>
+            <a href="https://github.com/MohnishShriHariB" class="fa fa-github"></a>
+        </div>
+    </div>
+    <script>
+        function showContent(category) {
+            var displayBox = document.getElementById('displaybox');
+            switch (category) {
+                case 'frontend':
+                    displayBox.innerHTML = '<div class="grid-container" style="grid-template-columns: 33.33% 33.33% 33.33%;"><div class="grid-item"><img src="./staticimages/html.svg" style="height:130px;width:130px;"><h4>HTML</h4></div><div class="grid-item"><img src="./staticimages/js.svg" style="height:130px;width=130px;"><h4>JAVASCRIPT</h4></div><div class="grid-item"><img src="./staticimages/css.svg" style="height:130px;width=130px;"><h4>CSS</h4></div><div class="grid-item"><img src="./staticimages/bootstrap.svg" style="height:130px;width=130px;"><h4>BOOTSTRAP</h4></div><div class="grid-item"><img src="./staticimages/react.svg" style="height:130px;width=130px;"><h4>REACT JS</h4></div></div>';
+                    break;
+                case 'backend':
+                    displayBox.innerHTML = '<div class="grid-container" style="grid-template-columns: 33.33% 33.33% 33.33%;"><div class="grid-item"><img src="./staticimages/django.svg" style="height:130px;width:130px;"><h4>DJANGO</h4></div><div class="grid-item"><img src="./staticimages/sqlite-ar21.svg" style="height:130px;width=130px;"><h4>SQLITE</h4></div></div>';
+                    break;
+                case 'dsa':
+                    displayBox.innerHTML = '<div class="grid-container" style="grid-template-columns: 33.33% 33.33% 33.33%;"><div class="grid-item"><img src="./staticimages/python.svg" style="height:130px;width:130px;"><h4>PYTHON</h4></div><div class="grid-item"><img src="./staticimages/cpp.svg" style="height:130px;width=130px;"><h4>C++</h4></div><div class="grid-item"><img src="./staticimages/java.svg" style="height:130px;width=130px;"><h4>JAVA</h4></div></div>';
+                    break;
+                default:
+                    displayBox.innerHTML = '';
+                    break;
+            }
+        }
+        document.addEventListener("DOMContentLoaded", function () {
+            showContent('frontend');
+        });
+    </script>
+</body>
+</html>
